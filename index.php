@@ -15,7 +15,7 @@ core\Autoloader::register();
 // ex : $form = new app\html\BsForm();
 $bdd = new core\database\Bdd();
 $bdd->connexion();
-var_dump($bdd);
+//var_dump($bdd);
 //var_dump($user);
  
 
