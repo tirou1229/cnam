@@ -23,10 +23,9 @@ class Bdd {
     }
 
     public function add() {
-        
-        $req = $this->pdo()->prepare('INSERT INTO propos(text) VALUES(:text)');
+        $req = $this->pdo->prepare('INSERT INTO propos(text) VALUES(:text)');
         $req->execute(array(
-            'text' => $_POST['text']
+             'text' => $_POST['propos']
         ));
     }
 }

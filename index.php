@@ -15,12 +15,17 @@ core\Autoloader::register();
 
 // ex : $form = new app\html\BsForm();
 $bdd = new core\database\Bdd();
+<<<<<<< HEAD
 //$bdd->connexion();
 //$bdd->add();
 //var_dump($bdd);
 //var_dump($user);
  
 
+=======
+$bdd->connexion();
+$bdd->add();
+>>>>>>> b9c0477bd9aca5bece6639146526a01923eff11a
 ob_start();
 // si home on affiche home
 if($p === 'home'){
