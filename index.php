@@ -17,10 +17,6 @@ core\Autoloader::register();
 $bdd = new core\database\Bdd();
 $bdd->connexion();
 $bdd->add();
-//var_dump($bdd);
-//var_dump($user);
- 
-
 ob_start();
 // si home on affiche home
 if($p === 'home'){
