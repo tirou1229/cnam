@@ -7,14 +7,19 @@
 
     <title>Barr Construction</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="app/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="app/assets/fonts">-->
+    <link rel="stylesheet" href="app/assets/css/style.css">
+    <link rel="stylesheet" href="app/assets/css/navbar.css">
+
 
   </head>
   <body>
     
       <?php echo $content; ?>
       
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="app/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="app/assets/js/bootstrap.min.js"></script>
   </body>
 </html>
