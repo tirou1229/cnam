@@ -23,6 +23,6 @@ class Bdd {
     }
 
     public function add() {
-        $this->pdo()->prepare('INSERT INTO ')
+        var_dump($this->pdo);
     }
 }

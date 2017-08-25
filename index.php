@@ -15,6 +15,7 @@ core\Autoloader::register();
 // ex : $form = new app\html\BsForm();
 $bdd = new core\database\Bdd();
 $bdd->connexion();
+$bdd->add();
 //var_dump($bdd);
 //var_dump($user);
  
@@ -22,7 +23,7 @@ $bdd->connexion();
 ob_start();
 // si home on affiche home
 if($p === 'home'){
-    require(ROOT . '/html/view/home.php');
+    require(ROOT . '/app/html/view/home.php');
 }
 
 elseif($p === 'admin'){
@@ -30,7 +31,7 @@ elseif($p === 'admin'){
 }
 
 else{
-    require(ROOT . '/html/404.php');
+    require(ROOT . '/app/html/view/404.php');
 }
 // si autre page on affiche autre page
 /* elseif($p === 'cool'){
@@ -41,4 +42,4 @@ else{
 // $content affiche le contenu d'une page
 $content = ob_get_clean();
 // Affiche le template
-require(ROOT . '/html/template/default.php');
+require(ROOT . '/app/html/template/default.php');
