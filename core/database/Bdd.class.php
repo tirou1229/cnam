@@ -6,7 +6,7 @@ use \PDO;
 
 class Bdd {
 
-    public $pdo;
+    private $pdo;
     public $host = 'localhost';
     public $dbname = 'cnam';
     public $user = 'root';
@@ -23,6 +23,6 @@ class Bdd {
     }
 
     public function add() {
-        
+
     }
 }
