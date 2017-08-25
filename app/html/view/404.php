@@ -1,1 +1,1 @@
-<h1>Hey fils de pute tu as une erreur de 404!!!</h1>
+<h1 class="text-center">Hey fils de pute tu as une erreur de 404!!!</h1>
