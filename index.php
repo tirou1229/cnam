@@ -13,15 +13,24 @@ require(ROOT . '/core/Autoloader.class.php');
 core\Autoloader::register();
 
 // ex : $form = new app\html\BsForm();
-$bdd = new core\bdd\Bdd();
-$user = new core\user\User($bdd->connexion());
+$bdd = new core\database\Bdd();
+$bdd->connexion();
+var_dump($bdd);
 //var_dump($user);
  
 
 ob_start();
 // si home on affiche home
 if($p === 'home'){
-    require(ROOT . '/public/pages/home.php');
+    require(ROOT . '/html/view/home.php');
+}
+
+elseif($p === 'admin'){
+    require(ROOT . '');
+}
+
+else{
+    require(ROOT . '/html/404.php');
 }
 // si autre page on affiche autre page
 /* elseif($p === 'cool'){
@@ -32,4 +41,4 @@ if($p === 'home'){
 // $content affiche le contenu d'une page
 $content = ob_get_clean();
 // Affiche le template
-require(ROOT . '/public/pages/templates/defaut.php');
+require(ROOT . '/html/template/default.php');
