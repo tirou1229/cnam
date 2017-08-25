@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 25, 2017 at 11:46 AM
+-- Generation Time: Aug 25, 2017 at 01:43 PM
 -- Server version: 5.7.14
 -- PHP Version: 7.0.10
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `image` (
   `id` int(11) NOT NULL,
   `imageurl` varchar(255) NOT NULL,
-  `nomd'image` varchar(255) NOT NULL
+  `nomdimage` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
