@@ -17,7 +17,6 @@
   <body>
     
       <?php echo $content; ?>
-      
 
     <script src="app/assets/js/jquery-3.2.1.min.js"></script>
     <script src="app/assets/js/bootstrap.min.js"></script>

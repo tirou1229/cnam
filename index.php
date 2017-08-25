@@ -5,6 +5,7 @@ define('ROOT', (__DIR__));
 if(isset($_GET['p'])){
     $p = $_GET['p'];
 }
+
 else{
     $p = 'home';
 }
@@ -28,6 +29,10 @@ if($p === 'home'){
 
 elseif($p === 'admin'){
     require(ROOT . '');
+}
+
+elseif($p === 'form'){
+    require(ROOT . '/app/html/view/form.php');
 }
 
 else{
