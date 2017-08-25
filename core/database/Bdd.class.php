@@ -23,6 +23,6 @@ class Bdd {
     }
 
     public function add() {
-        var_dump($this->pdo);
+//        var_dump($this->pdo);
     }
 }
